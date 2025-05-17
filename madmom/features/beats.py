@@ -80,7 +80,7 @@ class RNNBeatProcessor(SequentialProcessor):
         # choose the appropriate models and set frame sizes accordingly
         if online:
             if nn_files is None:
-                nn_files = BEATS_LSTM
+                nn_files = BEATS_BLSTM
             frame_sizes = [2048]
             num_bands = 12
         else:
